@@ -3,11 +3,92 @@
 <html>
 
 <head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+
+	
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Internship Form</h2>
+    <form class="needs-validation" novalidate>
+        <div class="row mb-3">
+            <!-- First Name -->
+            <div class="col-md-4">
+                <label for="first-name-input" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="first-name-input" name="first-name" required>
+                <div class="invalid-feedback">Please enter your first name.</div>
+            </div>
+
+            <!-- Last Name -->
+            <div class="col-md-4">
+                <label for="last-name-input" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="last-name-input" name="last-name" required>
+                <div class="invalid-feedback">Please enter your last name.</div>
+            </div>
+
+            <!-- Email Address -->
+            <div class="col-md-4">
+                <label for="email-input" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email-input" name="email" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <!-- College Name -->
+            <div class="col-md-4">
+                <label for="college-input" class="form-label">College</label>
+                <input type="text" class="form-control" id="college-input" name="college" required>
+                <div class="invalid-feedback">Please enter your college name.</div>
+            </div>
+
+            <!-- Graduation Year -->
+            <div class="col-md-4">
+                <label for="grad-year-input" class="form-label">Graduation Year</label>
+                <select class="form-select" id="grad-year-input" name="grad-year" required>
+                    <option value="" selected disabled>Choose...</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+                <div class="invalid-feedback">Please select your graduation year.</div>
+            </div>
+
+            <!-- Roll Number -->
+            <div class="col-md-4">
+                <label for="roll-no-input" class="form-label">Roll No.</label>
+                <input type="text" class="form-control" id="roll-no-input" name="roll-no" required>
+                <div class="invalid-feedback">Please enter your roll number.</div>
+            </div>
+        </div>
+
+        <!-- Agree to Terms -->
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="conditions-checkbox" name="terms" required>
+            <label for="conditions-checkbox" class="form-check-label">Agree to terms and conditions</label>
+            <div class="invalid-feedback">You must agree before submitting.</div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Submit form</button>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./script.js">
 </script>
 
